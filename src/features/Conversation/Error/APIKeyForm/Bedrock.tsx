@@ -76,10 +76,12 @@ const BedrockForm = memo(() => {
           onChange={(region) => {
             setConfig('bedrock', { region });
           }}
-          options={['us-east-1', 'us-west-2', 'ap-southeast-1', 'eu-central-1'].map((i) => ({
-            label: i,
-            value: i,
-          }))}
+          options={['us-east-1', 'us-west-2', 'ap-southeast-1', 'eu-central-1', 'eu-west-3'].map(
+            (i) => ({
+              label: i,
+              value: i,
+            }),
+          )}
           placeholder={'https://api.openai.com/v1'}
           style={{ width: '100%' }}
           value={region}
